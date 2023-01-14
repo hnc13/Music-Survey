@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Music Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title">Music Survey Form</h1>
+      <p id="description"><i>Please answer these questions about your favorite music</i></p>
+    </header>
+    
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <br>
+      <input id="name" required placeholder="Enter your name" type="text" class="long"></input>
+      <br><br>
+      <label id="email-label"for="email">Email</label>
+      <br>
+      <input id="email" required type="email" placeholder="Enter your Email" class="long"></input>
+      <br><br>
+      <label id="number-label" for="age">Age</label>
+      <br>
+      <input id="number" type="number" min="10" max="120" placeholder="Age" class="long"></input>
+      <br><br>
+      <label for="dropdown">What's your favorite music genre?</label>
+      <select id="dropdown" class="long">
+        <option value="">(select one)</option>
+        <option value="1">alternative</option>
+        <option value="2">blues</option>
+        <option value="3">classical</option>
+        <option value="4">country</option>
+        <option value="5">electronic</option>
+        <option value="6">folk</option>
+        <option value="7">hip hop</option>
+        <option value="8">indie</option>
+        <option value="9">jazz</option>
+        <option value="10">metal</option>
+        <option value="11">other</option>
+        <option value="12">pop</option>
+        <option value="13">R&B</option>
+        <option value="14">rock</option>
+      </select>
+    <p>Do you have a favorite band/artist?</p>
+    <input type="radio" name="fav_band" id="yes" value="yes">
+    <label for="yes">Yes!</label>
+    <br>
+    <input type="radio" name="fav_band" id="no" value="no">
+    <label for="no">No</label>
+    <br>
+    <input type="radio" name="fav_band" id="unsure" value="unsure">
+    <label for="unsure">Unsure</label>
+    <p>How do you listen to music?</p>
+    <input type="checkbox" name="how_listen", id="streaming", value="streaming">
+    <label for="streaming">Streaming (Spotify, Pandora, Apple Music, YouTube, etc.)</label>
+    <br>
+    <input type="checkbox" name="how_listen", id="radio", value="radio">
+    <label for="radio">Radio</label>
+    <br>
+    <input type="checkbox" name="how_listen", id="CD", value="CD">
+    <label for="CD">CDs</label>
+    <br>
+    <input type="checkbox" name="how_listen", id="vinyl", value="vinyl">
+    <label for="vinyl">Vinyl records</label>
+    <br>
+    <input type="checkbox" name="how_listen", id="other", value="other">
+    <label for="other">Other</label>
+    <p>Any additional comments?</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+    <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
